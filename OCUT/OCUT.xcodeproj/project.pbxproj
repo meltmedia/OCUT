@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		235241A8176F7A28001675A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235241A7176F7A28001675A8 /* UIKit.framework */; };
+		235241AA176F7A28001675A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235241A9176F7A28001675A8 /* Foundation.framework */; };
+		235241AC176F7A28001675A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235241AB176F7A28001675A8 /* CoreGraphics.framework */; };
+		235241B2176F7A28001675A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 235241B0176F7A28001675A8 /* InfoPlist.strings */; };
+		235241B4176F7A28001675A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 235241B3176F7A28001675A8 /* main.m */; };
+		235241B8176F7A28001675A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 235241B7176F7A28001675A8 /* AppDelegate.m */; };
+		235241BA176F7A28001675A8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 235241B9176F7A28001675A8 /* Default.png */; };
+		235241BC176F7A28001675A8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 235241BB176F7A28001675A8 /* Default@2x.png */; };
+		235241BE176F7A28001675A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 235241BD176F7A28001675A8 /* Default-568h@2x.png */; };
+		235241C6176F7A28001675A8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235241C5176F7A28001675A8 /* SenTestingKit.framework */; };
+		235241C7176F7A28001675A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235241A7176F7A28001675A8 /* UIKit.framework */; };
+		235241C8176F7A28001675A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235241A9176F7A28001675A8 /* Foundation.framework */; };
+		235241D0176F7A28001675A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 235241CE176F7A28001675A8 /* InfoPlist.strings */; };
+		235241D3176F7A28001675A8 /* BigUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 235241D2176F7A28001675A8 /* BigUnitTest.m */; };
+		235241DF176F7A72001675A8 /* Grape.m in Sources */ = {isa = PBXBuildFile; fileRef = 235241DE176F7A72001675A8 /* Grape.m */; };
+		235241E3176F7C4D001675A8 /* GrapeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 235241E2176F7C4D001675A8 /* GrapeService.m */; };
+		235241E6176F8223001675A8 /* PermissionService.m in Sources */ = {isa = PBXBuildFile; fileRef = 235241E5176F8223001675A8 /* PermissionService.m */; };
+		235241E9176F829B001675A8 /* GrapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 235241E8176F829B001675A8 /* GrapeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		235241C9176F7A28001675A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2352419A176F7A28001675A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 235241A2176F7A28001675A8;
+			remoteInfo = OCUT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		235241A3176F7A28001675A8 /* OCUT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCUT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		235241A7176F7A28001675A8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		235241A9176F7A28001675A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		235241AB176F7A28001675A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		235241AF176F7A28001675A8 /* OCUT-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCUT-Info.plist"; sourceTree = "<group>"; };
+		235241B1176F7A28001675A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		235241B3176F7A28001675A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		235241B5176F7A28001675A8 /* OCUT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCUT-Prefix.pch"; sourceTree = "<group>"; };
+		235241B6176F7A28001675A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		235241B7176F7A28001675A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		235241B9176F7A28001675A8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		235241BB176F7A28001675A8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		235241BD176F7A28001675A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		235241C4176F7A28001675A8 /* OCUTTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCUTTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		235241C5176F7A28001675A8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		235241CD176F7A28001675A8 /* OCUTTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCUTTests-Info.plist"; sourceTree = "<group>"; };
+		235241CF176F7A28001675A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		235241D1176F7A28001675A8 /* BigUnitTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BigUnitTest.h; sourceTree = "<group>"; };
+		235241D2176F7A28001675A8 /* BigUnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BigUnitTest.m; sourceTree = "<group>"; };
+		235241DD176F7A72001675A8 /* Grape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grape.h; sourceTree = "<group>"; };
+		235241DE176F7A72001675A8 /* Grape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grape.m; sourceTree = "<group>"; };
+		235241E1176F7C4D001675A8 /* GrapeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrapeService.h; sourceTree = "<group>"; };
+		235241E2176F7C4D001675A8 /* GrapeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrapeService.m; sourceTree = "<group>"; };
+		235241E4176F8223001675A8 /* PermissionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermissionService.h; sourceTree = "<group>"; };
+		235241E5176F8223001675A8 /* PermissionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermissionService.m; sourceTree = "<group>"; };
+		235241E7176F829B001675A8 /* GrapeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrapeViewController.h; sourceTree = "<group>"; };
+		235241E8176F829B001675A8 /* GrapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrapeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		235241A0176F7A28001675A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235241A8176F7A28001675A8 /* UIKit.framework in Frameworks */,
+				235241AA176F7A28001675A8 /* Foundation.framework in Frameworks */,
+				235241AC176F7A28001675A8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		235241C0176F7A28001675A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235241C6176F7A28001675A8 /* SenTestingKit.framework in Frameworks */,
+				235241C7176F7A28001675A8 /* UIKit.framework in Frameworks */,
+				235241C8176F7A28001675A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23524198176F7A28001675A8 = {
+			isa = PBXGroup;
+			children = (
+				235241AD176F7A28001675A8 /* OCUT */,
+				235241CB176F7A28001675A8 /* OCUTTests */,
+				235241A6176F7A28001675A8 /* Frameworks */,
+				235241A4176F7A28001675A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		235241A4176F7A28001675A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				235241A3176F7A28001675A8 /* OCUT.app */,
+				235241C4176F7A28001675A8 /* OCUTTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		235241A6176F7A28001675A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				235241A7176F7A28001675A8 /* UIKit.framework */,
+				235241A9176F7A28001675A8 /* Foundation.framework */,
+				235241AB176F7A28001675A8 /* CoreGraphics.framework */,
+				235241C5176F7A28001675A8 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		235241AD176F7A28001675A8 /* OCUT */ = {
+			isa = PBXGroup;
+			children = (
+				235241E0176F7C3A001675A8 /* Service */,
+				235241DC176F7A5A001675A8 /* Data */,
+				235241B6176F7A28001675A8 /* AppDelegate.h */,
+				235241B7176F7A28001675A8 /* AppDelegate.m */,
+				235241AE176F7A28001675A8 /* Supporting Files */,
+				235241EA176F82A1001675A8 /* Controllers */,
+			);
+			path = OCUT;
+			sourceTree = "<group>";
+		};
+		235241AE176F7A28001675A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				235241AF176F7A28001675A8 /* OCUT-Info.plist */,
+				235241B0176F7A28001675A8 /* InfoPlist.strings */,
+				235241B3176F7A28001675A8 /* main.m */,
+				235241B5176F7A28001675A8 /* OCUT-Prefix.pch */,
+				235241B9176F7A28001675A8 /* Default.png */,
+				235241BB176F7A28001675A8 /* Default@2x.png */,
+				235241BD176F7A28001675A8 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		235241CB176F7A28001675A8 /* OCUTTests */ = {
+			isa = PBXGroup;
+			children = (
+				235241D1176F7A28001675A8 /* BigUnitTest.h */,
+				235241D2176F7A28001675A8 /* BigUnitTest.m */,
+				235241CC176F7A28001675A8 /* Supporting Files */,
+			);
+			path = OCUTTests;
+			sourceTree = "<group>";
+		};
+		235241CC176F7A28001675A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				235241CD176F7A28001675A8 /* OCUTTests-Info.plist */,
+				235241CE176F7A28001675A8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		235241DC176F7A5A001675A8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				235241DD176F7A72001675A8 /* Grape.h */,
+				235241DE176F7A72001675A8 /* Grape.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		235241E0176F7C3A001675A8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				235241E1176F7C4D001675A8 /* GrapeService.h */,
+				235241E2176F7C4D001675A8 /* GrapeService.m */,
+				235241E4176F8223001675A8 /* PermissionService.h */,
+				235241E5176F8223001675A8 /* PermissionService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		235241EA176F82A1001675A8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				235241E7176F829B001675A8 /* GrapeViewController.h */,
+				235241E8176F829B001675A8 /* GrapeViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		235241A2176F7A28001675A8 /* OCUT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 235241D6176F7A28001675A8 /* Build configuration list for PBXNativeTarget "OCUT" */;
+			buildPhases = (
+				2352419F176F7A28001675A8 /* Sources */,
+				235241A0176F7A28001675A8 /* Frameworks */,
+				235241A1176F7A28001675A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCUT;
+			productName = OCUT;
+			productReference = 235241A3176F7A28001675A8 /* OCUT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		235241C3176F7A28001675A8 /* OCUTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 235241D9176F7A28001675A8 /* Build configuration list for PBXNativeTarget "OCUTTests" */;
+			buildPhases = (
+				235241BF176F7A28001675A8 /* Sources */,
+				235241C0176F7A28001675A8 /* Frameworks */,
+				235241C1176F7A28001675A8 /* Resources */,
+				235241C2176F7A28001675A8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				235241CA176F7A28001675A8 /* PBXTargetDependency */,
+			);
+			name = OCUTTests;
+			productName = OCUTTests;
+			productReference = 235241C4176F7A28001675A8 /* OCUTTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2352419A176F7A28001675A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = meltmedia;
+			};
+			buildConfigurationList = 2352419D176F7A28001675A8 /* Build configuration list for PBXProject "OCUT" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 23524198176F7A28001675A8;
+			productRefGroup = 235241A4176F7A28001675A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				235241A2176F7A28001675A8 /* OCUT */,
+				235241C3176F7A28001675A8 /* OCUTTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		235241A1176F7A28001675A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235241B2176F7A28001675A8 /* InfoPlist.strings in Resources */,
+				235241BA176F7A28001675A8 /* Default.png in Resources */,
+				235241BC176F7A28001675A8 /* Default@2x.png in Resources */,
+				235241BE176F7A28001675A8 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		235241C1176F7A28001675A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235241D0176F7A28001675A8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		235241C2176F7A28001675A8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2352419F176F7A28001675A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235241B4176F7A28001675A8 /* main.m in Sources */,
+				235241B8176F7A28001675A8 /* AppDelegate.m in Sources */,
+				235241DF176F7A72001675A8 /* Grape.m in Sources */,
+				235241E3176F7C4D001675A8 /* GrapeService.m in Sources */,
+				235241E6176F8223001675A8 /* PermissionService.m in Sources */,
+				235241E9176F829B001675A8 /* GrapeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		235241BF176F7A28001675A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235241D3176F7A28001675A8 /* BigUnitTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		235241CA176F7A28001675A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 235241A2176F7A28001675A8 /* OCUT */;
+			targetProxy = 235241C9176F7A28001675A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		235241B0176F7A28001675A8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				235241B1176F7A28001675A8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		235241CE176F7A28001675A8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				235241CF176F7A28001675A8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		235241D4176F7A28001675A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		235241D5176F7A28001675A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		235241D7176F7A28001675A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OCUT/OCUT-Prefix.pch";
+				INFOPLIST_FILE = "OCUT/OCUT-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		235241D8176F7A28001675A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OCUT/OCUT-Prefix.pch";
+				INFOPLIST_FILE = "OCUT/OCUT-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		235241DA176F7A28001675A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OCUT.app/OCUT";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OCUT/OCUT-Prefix.pch";
+				INFOPLIST_FILE = "OCUTTests/OCUTTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		235241DB176F7A28001675A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OCUT.app/OCUT";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OCUT/OCUT-Prefix.pch";
+				INFOPLIST_FILE = "OCUTTests/OCUTTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2352419D176F7A28001675A8 /* Build configuration list for PBXProject "OCUT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				235241D4176F7A28001675A8 /* Debug */,
+				235241D5176F7A28001675A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		235241D6176F7A28001675A8 /* Build configuration list for PBXNativeTarget "OCUT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				235241D7176F7A28001675A8 /* Debug */,
+				235241D8176F7A28001675A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		235241D9176F7A28001675A8 /* Build configuration list for PBXNativeTarget "OCUTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				235241DA176F7A28001675A8 /* Debug */,
+				235241DB176F7A28001675A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2352419A176F7A28001675A8 /* Project object */;
+}
