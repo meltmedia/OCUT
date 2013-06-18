@@ -31,9 +31,10 @@
   return [NSArray arrayWithArray:myMutableGrapeArray];
 }
 
-- (void)addGrape:(Grape*) grape {
+- (Grape*)addGrape:(Grape*) grape {
   
   [_idToGrapeDict setObject:grape forKey:grape.ID];
+  return grape;
   
 }
 

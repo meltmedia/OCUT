@@ -19,12 +19,12 @@
 		235241C6176F7A28001675A8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235241C5176F7A28001675A8 /* SenTestingKit.framework */; };
 		235241C7176F7A28001675A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235241A7176F7A28001675A8 /* UIKit.framework */; };
 		235241C8176F7A28001675A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235241A9176F7A28001675A8 /* Foundation.framework */; };
-		235241D0176F7A28001675A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 235241CE176F7A28001675A8 /* InfoPlist.strings */; };
 		235241D3176F7A28001675A8 /* GrapeControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 235241D2176F7A28001675A8 /* GrapeControllerTest.m */; };
 		235241DF176F7A72001675A8 /* Grape.m in Sources */ = {isa = PBXBuildFile; fileRef = 235241DE176F7A72001675A8 /* Grape.m */; };
 		235241E3176F7C4D001675A8 /* GrapeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 235241E2176F7C4D001675A8 /* GrapeService.m */; };
 		235241E6176F8223001675A8 /* PermissionService.m in Sources */ = {isa = PBXBuildFile; fileRef = 235241E5176F8223001675A8 /* PermissionService.m */; };
 		235241E9176F829B001675A8 /* GrapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 235241E8176F829B001675A8 /* GrapeViewController.m */; };
+		235241FE176FE679001675A8 /* GrapeControllerTest.h in Resources */ = {isa = PBXBuildFile; fileRef = 235241D1176F7A28001675A8 /* GrapeControllerTest.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +65,12 @@
 		235241E5176F8223001675A8 /* PermissionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermissionService.m; sourceTree = "<group>"; };
 		235241E7176F829B001675A8 /* GrapeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrapeViewController.h; sourceTree = "<group>"; };
 		235241E8176F829B001675A8 /* GrapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrapeViewController.m; sourceTree = "<group>"; };
+		23524203176FE73B001675A8 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		23524204176FE73B001675A8 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		23524205176FE73B001675A8 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		23524206176FE73B001675A8 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		23524207176FE73B001675A8 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		23524208176FE73B001675A8 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,7 @@
 		235241A6176F7A28001675A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23524202176FE73B001675A8 /* OCMock */,
 				235241A7176F7A28001675A8 /* UIKit.framework */,
 				235241A9176F7A28001675A8 /* Foundation.framework */,
 				235241AB176F7A28001675A8 /* CoreGraphics.framework */,
@@ -194,6 +201,20 @@
 				235241E8176F829B001675A8 /* GrapeViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		23524202176FE73B001675A8 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				23524203176FE73B001675A8 /* NSNotificationCenter+OCMAdditions.h */,
+				23524204176FE73B001675A8 /* OCMArg.h */,
+				23524205176FE73B001675A8 /* OCMConstraint.h */,
+				23524206176FE73B001675A8 /* OCMock.h */,
+				23524207176FE73B001675A8 /* OCMockObject.h */,
+				23524208176FE73B001675A8 /* OCMockRecorder.h */,
+			);
+			name = OCMock;
+			path = usr/include/OCMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				235241D0176F7A28001675A8 /* InfoPlist.strings in Resources */,
+				235241FE176FE679001675A8 /* GrapeControllerTest.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +429,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCUT/OCUT-Prefix.pch";
 				INFOPLIST_FILE = "OCUT/OCUT-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -419,6 +441,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCUT/OCUT-Prefix.pch";
 				INFOPLIST_FILE = "OCUT/OCUT-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -434,7 +457,18 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCUT/OCUT-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"${SRCROOT}/usr/include";
 				INFOPLIST_FILE = "OCUTTests/OCUTTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/usr/lib\"/**",
+					"\"$(SRCROOT)/usr/lib\"",
+				);
+				OTHER_LDFLAGS = (
+					"-forceLoad",
+					"\"${SRCROOT}/usr/lib/libOCMock.a\"",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -451,7 +485,18 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OCUT/OCUT-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"${SRCROOT}/usr/include";
 				INFOPLIST_FILE = "OCUTTests/OCUTTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/usr/lib\"/**",
+					"\"$(SRCROOT)/usr/lib\"",
+				);
+				OTHER_LDFLAGS = (
+					"-forceLoad",
+					"\"${SRCROOT}/usr/lib/libOCMock.a\"",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -477,6 +522,7 @@
 				235241D8176F7A28001675A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		235241D9176F7A28001675A8 /* Build configuration list for PBXNativeTarget "OCUTTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +531,7 @@
 				235241DB176F7A28001675A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

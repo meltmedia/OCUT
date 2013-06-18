@@ -15,7 +15,7 @@
 
 - (NSArray*)getGrapes;
 
-- (void)addGrape:(Grape*) grape;
+- (Grape*)addGrape:(Grape*) grape;
 
 - (Grape*)getGrape:(NSString*)ID;
 

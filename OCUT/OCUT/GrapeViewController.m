@@ -20,11 +20,27 @@
     if (self) {
     
       // Initialize out services
-      grapeService = [[GrapeService alloc] init];
-      permissionService = [[PermissionService alloc] init];
+      _grapeService = [[GrapeService alloc] init];
+      _permissionService = [[PermissionService alloc] init];
       
     }
     return self;
+}
+
+- (id)init {
+  
+  return [self initWithGrapeService:[[GrapeService alloc] init] andPermissionService:[[PermissionService alloc] init]];
+  
+}
+
+- (id)initWithGrapeService:(GrapeService *)grapeService andPermissionService:(PermissionService *)permissionService {
+  
+  if (self = [super init]) {
+    _grapeService = grapeService;
+    _permissionService = permissionService;
+  }
+  
+  return self;
 }
 
 - (void)viewDidLoad {
@@ -36,19 +52,18 @@
 }
 
 - (NSArray*)list {
-  [permissionService canListGrape];
-  return [grapeService getGrapes];
+  [_permissionService canListGrape];
+  return [_grapeService getGrapes];
 }
 
 - (Grape*)get:(NSString*)ID {
-  [permissionService canGetGrapes];
-  return [grapeService getGrape:ID];
+  [_permissionService canGetGrapes];
+  return [_grapeService getGrape:ID];
 }
 
 - (Grape*)add:(Grape*)grape {
-  [permissionService canAddGrape];
-  [grapeService addGrape:grape];
-  return grape;
+  [_permissionService canAddGrape];
+  return [_grapeService addGrape:grape];
 }
 
 @end

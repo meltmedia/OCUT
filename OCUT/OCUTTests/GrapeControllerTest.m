@@ -9,6 +9,8 @@
 #import "GrapeControllerTest.h"
 #import "Grape.h"
 #import "GrapeViewController.h"
+#import <OCMock/OCMock.h>
+
 
 @implementation GrapeControllerTest
 
@@ -26,42 +28,63 @@
 
 - (void)testAddGrape {
   
-  GrapeViewController* grapeViewController = [[GrapeViewController alloc] init];
+  id mockGrapeService = [OCMockObject mockForClass:[GrapeService class]];
+  id mockPermissionService = [OCMockObject mockForClass:[PermissionService class]];
+  
+  GrapeViewController* grapeViewController = [[GrapeViewController alloc] initWithGrapeService:mockGrapeService andPermissionService:mockPermissionService];
   Grape* testGrape = [self createGrapeWithID:@"1" andWrangled:NO];
+  Grape* responseGrape = [self createGrapeWithID:@"2" andWrangled:YES];
+  
+  [[[mockPermissionService stub] andReturnValue:OCMOCK_VALUE((BOOL){YES})] canAddGrape];
+  [[[mockGrapeService stub] andReturn:responseGrape] addGrape:testGrape];
+  
   Grape* grape = [grapeViewController add:testGrape];
   
-  STAssertEqualObjects(testGrape, grape, @"Grapes are not equal");
+  [mockGrapeService verify];
+  [mockPermissionService verify];
+  
+  STAssertEqualObjects(responseGrape, grape, @"Grapes are not equal");
   
 }
 
 - (void)testListGrapes {
   
-  NSUInteger EXPECTED_SIZE = 10;
-  GrapeViewController* grapeViewController = [[GrapeViewController alloc] init];
-  NSArray* emptyArray = [grapeViewController list];
+  id mockGrapeService = [OCMockObject mockForClass:[GrapeService class]];
+  id mockPermissionService = [OCMockObject mockForClass:[PermissionService class]];
+  NSArray* mockGrapeArray = [[NSArray alloc] init];
   
-  STAssertEquals((NSUInteger)0, emptyArray.count, @"Grapes is not initially empty.");
+  [[[mockPermissionService stub] andReturnValue:OCMOCK_VALUE((BOOL){YES})] canListGrape];
+  [[[mockGrapeService stub] andReturn:mockGrapeArray] getGrapes];
   
-  for (int index = 0; index < EXPECTED_SIZE; index++) {
-    [grapeViewController add:[self createGrapeWithID:[NSString stringWithFormat:@"%c", index] andWrangled:NO]];
-  }
+  GrapeViewController* grapeViewController = [[GrapeViewController alloc] initWithGrapeService:mockGrapeService andPermissionService:mockPermissionService];
   
-  STAssertEquals(EXPECTED_SIZE, grapeViewController.list.count, @"Incorrect number of grapes.");
+  NSArray* grapeArray = [grapeViewController list];
+  
+  [mockGrapeService verify];
+  [mockPermissionService verify];
+  
+  STAssertEqualObjects(mockGrapeArray, grapeArray, @"Arrays are not equivalent.");
 
 }
 
 - (void)testGetGrapes {
   
-  NSString* GRAPE_ID = @"4";
-  BOOL GRAPE_WRANGLED = NO;
+  NSString* GRAPE_ID = @"1";
+  id mockGrapeService = [OCMockObject mockForClass:[GrapeService class]];
+  id mockPermissionService = [OCMockObject mockForClass:[PermissionService class]];
+  Grape* mockGrape = [self createGrapeWithID:GRAPE_ID andWrangled:NO];
   
-  GrapeViewController* grapeViewController = [[GrapeViewController alloc] init];
-  [grapeViewController add:[self createGrapeWithID:GRAPE_ID andWrangled:GRAPE_WRANGLED]];
+  [[[mockPermissionService stub] andReturnValue:OCMOCK_VALUE((BOOL){YES})] canGetGrapes];
+  [[[mockGrapeService stub] andReturn:mockGrape] getGrape:GRAPE_ID];
   
-  Grape* testGrape = [grapeViewController get:GRAPE_ID];
+  GrapeViewController* grapeViewController = [[GrapeViewController alloc] initWithGrapeService:mockGrapeService andPermissionService:mockPermissionService];
   
-  STAssertEqualObjects(GRAPE_ID, testGrape.ID, @"Grape ID's do not match.");
-  STAssertEquals(GRAPE_WRANGLED, testGrape.wrangled, @"Grape is improperly wrangled.");
+  Grape* gotGrape = [grapeViewController get:GRAPE_ID];
+  
+  [mockGrapeService verify];
+  [mockPermissionService verify];
+  
+  STAssertEqualObjects(mockGrape, gotGrape, @"Grapes are not equivalent.");
   
 }
 

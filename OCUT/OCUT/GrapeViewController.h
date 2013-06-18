@@ -12,10 +12,12 @@
 
 @interface GrapeViewController : UIViewController {
   
-  GrapeService *grapeService;
-  PermissionService *permissionService;
+  GrapeService *_grapeService;
+  PermissionService *_permissionService;
   
 }
+
+- (id)initWithGrapeService:(GrapeService*)grapeService andPermissionService:(PermissionService*)permissionService;
 
 - (NSArray*)list;
 - (Grape*)get:(NSString*)ID;
