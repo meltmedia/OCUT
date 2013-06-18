@@ -10,27 +10,21 @@
 
 @implementation GrapeService
 
-+ (NSMutableDictionary*)idToGrapeDict {
+- (id)init {
   
-  static NSMutableDictionary *_idToGrapeDict = nil;
-  static dispatch_once_t onceToken;
-  
-  dispatch_once(&onceToken, ^{
-  
+  if (self = [super init]) {
     _idToGrapeDict = [[NSMutableDictionary alloc] init];
-    
-  });
+  }
   
-  return _idToGrapeDict;
-  
+  return self;
 }
 
 - (NSArray*)getGrapes {
   
   NSMutableArray *myMutableGrapeArray = [[NSMutableArray alloc] init];
   
-  for (id key in [GrapeService idToGrapeDict]) {
-    id value = [[GrapeService idToGrapeDict] objectForKey:key];
+  for (id key in _idToGrapeDict) {
+    id value = [_idToGrapeDict objectForKey:key];
     [myMutableGrapeArray addObject:value];
   }
   
@@ -39,13 +33,13 @@
 
 - (void)addGrape:(Grape*) grape {
   
-  [(NSMutableDictionary*)[GrapeService idToGrapeDict] setObject:grape forKey:grape.ID];
+  [_idToGrapeDict setObject:grape forKey:grape.ID];
   
 }
 
 - (Grape*)getGrape:(NSString*)ID {
   
-  return (Grape*)[(NSMutableDictionary*)[GrapeService idToGrapeDict] objectForKey:ID];
+  return (Grape*)[_idToGrapeDict objectForKey:ID];
   
 }
 

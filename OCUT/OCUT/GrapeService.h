@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "Grape.h"
 
-@interface GrapeService : NSObject
+@interface GrapeService : NSObject {
+  NSMutableDictionary *_idToGrapeDict;
+}
 
 - (NSArray*)getGrapes;
 

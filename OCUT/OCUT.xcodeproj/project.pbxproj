@@ -20,7 +20,7 @@
 		235241C7176F7A28001675A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235241A7176F7A28001675A8 /* UIKit.framework */; };
 		235241C8176F7A28001675A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235241A9176F7A28001675A8 /* Foundation.framework */; };
 		235241D0176F7A28001675A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 235241CE176F7A28001675A8 /* InfoPlist.strings */; };
-		235241D3176F7A28001675A8 /* BigUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 235241D2176F7A28001675A8 /* BigUnitTest.m */; };
+		235241D3176F7A28001675A8 /* GrapeControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 235241D2176F7A28001675A8 /* GrapeControllerTest.m */; };
 		235241DF176F7A72001675A8 /* Grape.m in Sources */ = {isa = PBXBuildFile; fileRef = 235241DE176F7A72001675A8 /* Grape.m */; };
 		235241E3176F7C4D001675A8 /* GrapeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 235241E2176F7C4D001675A8 /* GrapeService.m */; };
 		235241E6176F8223001675A8 /* PermissionService.m in Sources */ = {isa = PBXBuildFile; fileRef = 235241E5176F8223001675A8 /* PermissionService.m */; };
@@ -55,8 +55,8 @@
 		235241C5176F7A28001675A8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		235241CD176F7A28001675A8 /* OCUTTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCUTTests-Info.plist"; sourceTree = "<group>"; };
 		235241CF176F7A28001675A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		235241D1176F7A28001675A8 /* BigUnitTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BigUnitTest.h; sourceTree = "<group>"; };
-		235241D2176F7A28001675A8 /* BigUnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BigUnitTest.m; sourceTree = "<group>"; };
+		235241D1176F7A28001675A8 /* GrapeControllerTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrapeControllerTest.h; sourceTree = "<group>"; };
+		235241D2176F7A28001675A8 /* GrapeControllerTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrapeControllerTest.m; sourceTree = "<group>"; };
 		235241DD176F7A72001675A8 /* Grape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grape.h; sourceTree = "<group>"; };
 		235241DE176F7A72001675A8 /* Grape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grape.m; sourceTree = "<group>"; };
 		235241E1176F7C4D001675A8 /* GrapeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrapeService.h; sourceTree = "<group>"; };
@@ -151,8 +151,8 @@
 		235241CB176F7A28001675A8 /* OCUTTests */ = {
 			isa = PBXGroup;
 			children = (
-				235241D1176F7A28001675A8 /* BigUnitTest.h */,
-				235241D2176F7A28001675A8 /* BigUnitTest.m */,
+				235241D1176F7A28001675A8 /* GrapeControllerTest.h */,
+				235241D2176F7A28001675A8 /* GrapeControllerTest.m */,
 				235241CC176F7A28001675A8 /* Supporting Files */,
 			);
 			path = OCUTTests;
@@ -318,7 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				235241D3176F7A28001675A8 /* BigUnitTest.m in Sources */,
+				235241D3176F7A28001675A8 /* GrapeControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
